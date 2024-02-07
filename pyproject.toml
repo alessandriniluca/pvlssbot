@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pvlssbot"
+version = "0.1.0"
+description = "This is a telegram bot that allows you to check how much space is left on a partition. It periodically runs the command to check the space left on device, and in case it is less than a threshold, it alerts you with a notification. It also checks your running scripts (see README.md for more details)"
+authors = ["alessandriniluca <luca.alessandrini@mail.polimi.it>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-telegram-bot = "20.7"
+psutil = "5.9.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
